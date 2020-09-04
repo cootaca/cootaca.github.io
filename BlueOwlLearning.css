@@ -280,6 +280,7 @@ article.aboutUsMain {
   flex-direction: column;
   width: 250px;
 }
+
 .dropperInner label {
   padding-bottom: 10px;
 }
@@ -291,6 +292,7 @@ article.aboutUsMain {
   border: 1px solid rgb(131, 122, 122);
   font-family: "Nunito", sans-serif;
   font-size: 15px;
+  background-color:white;
 }
 
 .dropperInner select:focus {
