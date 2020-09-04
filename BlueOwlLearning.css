@@ -54,9 +54,10 @@ article {
 
 .hamIcon {
   position: absolute;
-  top: 0px;
+  top: -25px;
   right: 30px;
   color: rgb(21, 66, 86);
+  font-size:25px;
 }
 
 .hamIcon a {
