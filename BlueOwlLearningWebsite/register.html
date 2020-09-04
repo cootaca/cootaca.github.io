@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blue Owl Learning</title>
+    <link rel="stylesheet" type="text/css" href="BlueOwlLearning.css" />
+
+    <!--Google Fonts-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2&family=Lato:wght@300&family=Nunito:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Livvic:wght@300;400&family=Montserrat&family=Roboto:wght@300&family=Rubik&family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="blueOwlLearning.js"></script>
+  </head>
+
+  <body>
+    <div id="content-wrap">
+      <header id="mainHeader">
+        <a href="index.html"
+          ><img
+            id="blueOwlLearningLogo"
+            src="BlueOwlLearningLargeBanner.png"
+            alt="Blue Owl Learning Logo"
+        /></a>
+      </header>
+      <div class="hamIcon" onclick="toggleNavigationClass()">
+        <h1><a href="javascript:void(0)">&#9776;</a></h1>
+      </div>
+      <nav id="mainNavigation">
+        <a href="aboutUs.html">
+          <h3 id="firstNavigationLink">ABOUT US</h3>
+        </a>
+        <a href="register.html">
+          <h3>REGISTER</h3>
+        </a>
+        <a href="volunteer.html">
+          <h3>VOLUNTEER</h3>
+        </a>
+        <a href="donate.html">
+          <h3>DONATE</h3>
+        </a>
+        <a href="contactUs.html">
+          <h3>CONTACT US</h3>
+        </a>
+      </nav>
+      <article class="registerMainContent" id="mainPageContent">
+        <header>
+          <h1>Student Registration</h1>
+        </header>
+        <h3>
+          If you are interested in signing up for the tutoring program, please
+          fill out the following form.
+        </h3>
+        <form id="registerStudentForm">
+          <div class="twoTextFieldsOuter" id="nameParentStudentR">
+            <div class="twoTextFieldsInner" id="fNameParentStudentR">
+              <label for="registerFirstNameP" required>Parent's First Name</label>
+              <input
+                type="text"
+                id="registerFirstNameP"
+                name="registerFirstNameP"
+              />
+            </div>
+            <div class="twoTextFieldsInner leftTSR" id="lNameParentStudentR">
+              <label for="registerLastNameP">Parent's Last Name</label>
+              <input
+                type="text"
+                id="registerLastNameP"
+                name="registerLastNameP"
+              />
+            </div>
+          </div>
+
+          <div class="twoTextFieldsOuter" id="nameStudentStudentR">
+            <div class="twoTextFieldsInner" id="fNameStudentStudentR">
+              <label for="registerFirstNameS">Student's First Name</label>
+              <input
+                type="text"
+                id="registerFirstNameS"
+                name="registerFirstNameS"
+              />
+            </div>
+            <div class="twoTextFieldsInner leftTSR" id="lNameStudentStudentR">
+              <label for="registerLastNameS">Student's Last Name</label>
+              <input
+                type="text"
+                id="registerLastNameS"
+                name="registerLastNameS"
+              />
+            </div>
+          </div>
+          <div class="dropperOuter" id="DropperContactSR">
+            <div class="dropperInner" id="RegMethodContact">
+              <label for="methodOfContactSR">Preferred Method of Contact</label>
+              <select id="methodOfContactSR" name="methodOfContactSR">
+                <option value="Email">Email</option>
+                <option value="Phone">Phone</option>
+              </select>
+            </div>
+          </div>
+          <div class="twoTextFieldsOuter" id="emailAndPhoneSR">
+            <div class="twoTextFieldsInner" id="emailInfoSR">
+              <label for="emailSR">Email</label>
+              <input type="telow t" id="emailSR" name="emailSR" />
+            </div>
+            <div class="twoTextFieldsInner leftTSR" id="phoneInfoSR">
+              <label for="phoneSR">Phone</label>
+              <input type="text" id="phoneSR" name="phoneSR" />
+            </div>
+          </div>
+
+          <div class="dropperOuter" id="DropperStudentGradeSR">
+            <div class="dropperInner" id="studentGradeInnerSR">
+              <label for="currentStudentGrade"
+                >Student's Current Grade Level</label
+              >
+              <select id="currentStudentGrade" name="currentStudentGrade">
+                <option value="Kindergarten">Kindergarten</option>
+                <option value="1st">1st</option>
+                <option value="2nd">2nd</option>
+                <option value="3rd">3rd</option>
+                <option value="4th">4th</option>
+                <option value="5th">5th</option>
+                <option value="6th">6th</option>
+                <option value="7th">7th</option>
+                <option value="8th">8th</option>
+                <option value="9th">9th</option>
+                <option value="10th">10th</option>
+                <option value="11th">11th</option>
+                <option value="12th">12th</option>
+              </select>
+            </div>
+          </div>
+          <div class="twoTextFieldsOuter" id="schoolDistrictOuter">
+            <div class="twoTextFieldsInner" id="schoolDistrictInner">
+              <label for="schoolDistrictSR">Student's School District</label>
+              <input
+                type="text"
+                name="schoolDistrictSR"
+                id="schoolDistrictSR"
+              />
+            </div>
+          </div>
+
+          <div class="subjectsHelpSROuter">
+            <p>
+              Please select <i>ALL</i> the subjects the student would like help
+              with
+            </p>
+            <div class="subjectsHelpSRInner">
+              <input id="mathSR" value="Math" name="mathSR" type="checkbox" />
+              <label for="mathSR">Math</label>
+            </div>
+            <div class="subjectsHelpSRInner">
+              <input
+                id="englishSR"
+                value="English"
+                name="englishSR"
+                type="checkbox"
+              />
+              <label for="englishSR">English</label>
+            </div>
+            <div class="subjectsHelpSRInner">
+              <input
+                id="scienceSR"
+                value="Science"
+                name="scienceSR"
+                type="checkbox"
+              />
+              <label for="scienceSR">Science</label>
+            </div>
+            <div class="subjectsHelpSRInner">
+              <input
+                id="historySR"
+                value="History"
+                name="historySR"
+                type="checkbox"
+              />
+              <label for="historySR">History</label>
+            </div>
+            <div class="subjectsHelpSRInner">
+              <input id="SATSR" value="SAT Prep" name="SATSR" type="checkbox" />
+              <label for="SATSR">SAT Prep</label>
+            </div>
+          </div>
+          <div class="outerTextAreaSR" id="textAreaForApClassesOuter">
+            <div class="innerTextAreaSR" id="textAreaForApClassesInner">
+              <label for="APClasses"
+                >If the student would like help with AP Classes please specify
+                which ones
+              </label>
+              <textarea name="APClasses" id="APClasses"></textarea>
+            </div>
+          </div>
+
+          <div class="outerTextAreaSR" id="textAreaForSATSubOuter">
+            <div class="innerTextAreaSR" id="textAreaForSATSubInner">
+              <label for="SATSubjectTests"
+                >If the student would like help with SAT Subject Tests please
+                specify which ones
+              </label>
+              <textarea name="SATSubjectTests" id="SATSubjectTests"></textarea>
+            </div>
+          </div>
+          <div class="subjectsHelpSROuter">
+            <p>Please select <i>ALL</i> the days the student is available</p>
+            <div class="subjectsHelpSRInner">
+              <input
+                id="mondaySessionSR"
+                value="monday"
+                name="mondaySessionSR"
+                type="checkbox"
+              />
+              <label for="mondaySessionSR">Monday from 4:30-5:30 PM</label>
+            </div>
+            <div class="subjectsHelpSRInner">
+              <input
+                id="wednesdaySessionSR"
+                value="wednesday"
+                name="wednesdaySessionSR"
+                type="checkbox"
+              />
+              <label for="wednesdaySessionSR"
+                >Wednesday from 4:30-5:30 PM</label
+              >
+            </div>
+            <div class="subjectsHelpSRInner">
+              <input
+                id="fridaySessionSR"
+                value="friday"
+                name="fridaySessionSR"
+                type="checkbox"
+              />
+              <label for="fridaySessionSR">Friday from 4:30-5:30 PM</label>
+            </div>
+          </div>
+         <p><b>Please read all the following policies carefully</b></p>
+          
+          <!--<object width="100%" height="500" type="application/pdf" data="StudentAndParentTermsOfServiceBlueOwl.pdf?#zoom=85&scrollbar=0&toolbar=0&navpanes=0">
+            <p>Insert your error message here, if the PDF cannot be displayed.</p>
+        </object>-->
+
+          <div id="textForParentsTOS">
+            <p>
+              <strong>Terms of Service for Students and Parents:</strong>
+            </p>
+            <ol>
+              <li>
+                The Program runs strictly on a volunteer basis, and Blue Owl
+                Learning is not an employment service.
+              </li>
+              <br />
+
+              <li>
+                In the event that a student or tutor altercation occurs during a
+                tutoring session, a thorough investigation will be completed to
+                identify what happened by accessing the recording of the session
+                and using witness testimony of the altercation in question
+                before any conclusions are drawn.
+              </li>
+              <br />
+
+              <li>
+                If a Student is being disrespectful towards the tutor then the
+                student will receive a warning, if they continue to be
+                disrespectful then they will be muted for the remainder of the
+                session and their supervisors will be contacted following the
+                session.
+              </li>
+              <br />
+              <ol id="TOSListAlpha">
+                <li>
+                  If the student says anything widely inappropriate during the
+                  sessions they will be muted and there will be repercussions
+                  for their actions
+                </li>
+                <br />
+
+                <li>Obligations of the Student:</li>
+                <br />
+                <ol>
+                  <li>
+                    The Student will provide information to the Tutor to assess
+                    and identify subject areas that the Student requires
+                    specific tutoring.
+                  </li>
+                  <br />
+
+                  <li>
+                    The Student agrees to provide their own materials needed for
+                    each tutoring session (i.e., notebook, writing instruments,
+                    computer, etc.).
+                  </li>
+                  <br />
+
+                  <li>
+                    The Student agrees that assignments, exercises or homework
+                    form an integral part of tutoring and commits to completing
+                    such work thoroughly and promptly.
+                  </li>
+                  <br />
+                </ol>
+              </ol>
+
+              <li>
+                The student and tutor will have no attempt to contact one
+                another outside of the classroom. Nothing can be exchanged
+                between the student and tutor other than the educational
+                resources that are used during the meeting.
+              </li>
+              <br />
+
+              <li>
+                Where the Student is a legal minor, the Parent/Guardian shall
+                enter into this tutoring contract on behalf of the Student and
+                shall accept and agree to all the terms and conditions contained
+                herein on behalf of the Student.
+              </li>
+              <br />
+
+              <li>
+                You acknowledge that you will be contacted regarding information
+                and important updates with Blue Owl Learning.
+              </li>
+              <br />
+
+              <li>
+                You acknowledge that by clicking on the "I Accept", "Submit",
+                “Request Tutoring Info”, or similar button on any forms, you are
+                indicating your intent to sign the relevant document or record
+                and that this shall constitute your signature.
+              </li>
+              <br />
+              <li>
+                For any academic source materials such as textbooks and
+                workbooks which you submit to us in connection with our online
+                tutoring services, you represent and warrant that you are
+                entitled to upload such materials under the “fair use” doctrine
+                of copyright law. In addition, if you request that our system
+                display a representation of a page or problem from a textbook or
+                workbook, you represent and warrant that you are in proper legal
+                possession of such textbook or workbook and that your
+                instruction to our system to display a page or problem from your
+                textbook or workbook is made for the sole purpose of
+                facilitating your tutoring session, as “fair use” under
+                copyright law.
+              </li>
+              <br />
+              <li>
+                You agree that we may record all or any part of any live online
+                classes and tutoring sessions (including voice chat
+                communications and videos) for quality control and other
+                purposes. You agree that we own all transcripts and recordings
+                of such sessions, and you hereby irrevocably assign to us all
+                rights in all such transcripts and recordings.
+              </li>
+              <br />
+              <li>
+                You agree that you will not attempt (or encourage or support
+                anyone else's attempt) to circumvent, reverse engineer, decrypt,
+                or otherwise alter or interfere with the program or the
+                program’s products or services (such as videos), or any content
+                thereof, or make unauthorized use thereof. Videos that are
+                uploaded by Blue Owl Learning are for viewing/educational
+                purposes only and the redistribution of these videos is not
+                allowed.
+              </li>
+              <br />
+              <li>
+                You agree that you will treat our online tutors and instructors
+                with respect and not use obscenities in the online classroom,
+                lie about false emergencies, make threats or discuss personal
+                matters or matters other than those related to the subject for
+                which you seek help. You agree that you will not disclose any
+                information to your online tutor or instructor that could be
+                considered personally identifiable information, such as your
+                address, telephone number, email address, social security
+                number, or any other information that could be used to identify
+                or locate you. Similarly, you agree that you will not solicit
+                any such information from any online tutor or instructor and
+                agree that if any online tutor or instructor ever discloses such
+                information to you, asks you for any personal information, or
+                suggests any offline meeting or conversation, you agree to
+                immediately report this to us by phone and/or in writing. You
+                agree not to use the program to recruit, solicit, or contact in
+                any form tutors or instructors for employment or contracting for
+                a business not affiliated with us without our advance written
+                permission.
+              </li>
+              <br />
+              <li>
+                We reserve the right, at our sole discretion, to modify any
+                portion of these Terms and Conditions at any time. Changes in
+                these Terms and Conditions will be effective after you have been
+                notified. Continued participation in the program will be
+                considered acceptance of those changes. In the case that the
+                Terms and Conditions are modified, you [the parent/guardian]
+                will be alerted.
+              </li>
+            </ol>
+          </div>
+
+
+
+
+          <div class="subjectsHelpSROuter">
+            
+            <div class="subjectsHelpSRInner">
+              <input
+                id="sessionsRecordedAgree"
+                value="AgreeToSessionsRecorded"
+                name="sessionsRecordedAgree"
+                type="checkbox"
+              />
+              <label for="sessionsRecordedAgree"
+                >I understand that tutoring sessions will be recorded so that
+                students will be able to go back and review their sessions, and
+                to ensure that both students and tutors behave appropriately.
+                The videos will only be available to the students and other
+                members of the program.</label
+              >
+            </div>
+            <div class="subjectsHelpSRInner">
+              <input
+                id="agreeToTermsSR"
+                value="AgreeToTerms"
+                name="agreeToTermsSR"
+                type="checkbox"
+              />
+              <label for="agreeToTermsSR"
+                >I agree with the above terms of service</label
+              >
+            </div>
+          </div>
+
+
+
+          <div class="outerTextAreaSR" id="textAreaForConcernsSROuter">
+            <div class="innerTextAreaSR" id="textAreaForConcernsSRInner">
+              <label for="concernsSR"
+                >Do you have any questions or concerns about the program?
+              </label>
+              <textarea name="concernsSR" id="concernsSR"></textarea>
+            </div>
+          </div>
+          <button type="submit" name="submitSR">Submit</button>
+        </form>
+      </article>
+      <footer>
+        <h2>Blue Owl Learning™</h2>
+      </footer>
+    </div>
+  </body>
+</html>
